@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>EduList</title>
+  </head>
+  <body>
+    <!--  HEADER  -->
+    <header
+      class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-4"
+    >
+      <nav
+        class="mx-auto max-w-7xl px-6 lg:px-8 w-full flex basis-full items-center justify-between"
+      >
+        <div class="me-5">
+          <a
+            class="flex-none rounded-md text-3xl inline-block font-semibold focus:outline-none focus:opacity-80"
+            href="#"
+            aria-label=""
+          >
+            Logo
+          </a>
+        </div>
+        <div class="md:hidden">
+          <button
+            type="button"
+            class="hs-collapse-toggle size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+            id="hs-secondaru-navbar-collapse"
+            aria-expanded="false"
+            aria-controls="hs-secondaru-navbar"
+            aria-label="Toggle navigation"
+            data-hs-collapse="#hs-secondaru-navbar"
+          >
+            <svg
+              class="hs-collapse-open:hidden size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg
+              class="hs-collapse-open:block shrink-0 hidden size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+
+        <div class="hidden md:block">
+          <div class="relative">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3.5"
+            >
+              <svg
+                class="shrink-0 size-4 text-gray-400/60"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              class="w-96 py-2 ps-10 pe-16 block bg-white border border-gray-500 rounded-lg text-sm focus:outline-none focus:border-theme1 focus:ring-theme1 disabled:opacity-50 disabled:pointer-events-none"
+              placeholder="Search"
+            />
+            <div
+              class="hidden absolute inset-y-0 end-0 items-center pointer-events-none z-20 pe-1"
+            >
+              <button
+                type="button"
+                class="inline-flex shrink-0 justify-center items-center size-6 rounded-full text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                aria-label="Close"
+              >
+                <span class="sr-only">Close</span>
+                <svg
+                  class="shrink-0 size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m15 9-6 6" />
+                  <path d="m9 9 6 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center justify-end gap-1">
+          <button
+            type="button"
+            class="md:hidden size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            <svg
+              class="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+
+          <button
+            type="button"
+            class="size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            <svg
+              class="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+            </svg>
+            <span class="sr-only">Notifications</span>
+          </button>
+
+          <button
+            type="button"
+            class="size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            <svg
+              class="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+            <span class="sr-only">Activity</span>
+          </button>
+
+          <div
+            class="hs-dropdown [--placement:bottom-right] relative inline-flex"
+          >
+            <button
+              id="hs-dropdown-account"
+              type="button"
+              class="size-[38px] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-label="Dropdown"
+            >
+              <img
+                class="shrink-0 size-[38px] rounded-full"
+                src="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?t=st=1735218429~exp=1735222029~hmac=990a97e10975225d6c123e27dca64b31287df39528299a66a1434c328613f6d8&w=740"
+                alt="Avatar"
+              />
+            </button>
+
+            <div
+              class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="hs-dropdown-account"
+            >
+              <div class="py-3 px-5 bg-gray-100 rounded-t-lg">
+                <p class="text-sm text-gray-500">Signed in as</p>
+                <p class="text-sm font-medium text-gray-800">
+                  james@site.com
+                </p>
+              </div>
+              <div class="p-1.5 space-y-0.5">
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                  href="#"
+                >
+                  <svg
+                    class="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                  </svg>
+                  Newsletter
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                  href="#"
+                >
+                  <svg
+                    class="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+                    />
+                    <path d="M3 6h18" />
+                    <path d="M16 10a4 4 0 0 1-8 0" />
+                  </svg>
+                  Purchases
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                  href="#"
+                >
+                  <svg
+                    class="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"
+                    />
+                    <path d="M12 12v9" />
+                    <path d="m8 17 4 4 4-4" />
+                  </svg>
+                  Downloads
+                </a>
+                <a
+                  class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                  href="#"
+                >
+                  <svg
+                    class="shrink-0 size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                  Team Account
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  END HEADER  -->
+    <div class="md:py-5 bg-black md:border-b border-gray-200">
+      <nav
+        class="relative mx-auto max-w-7xl px-6 lg:px-8 w-full md:flex md:items-center md:gap-3"
+      >
+        <div
+          id="hs-secondaru-navbar"
+          class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+          aria-labelledby="hs-secondaru-navbar-collapse"
+        >
+          <div
+            class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+          >
+            <div
+              class="py-2 md:py-0 flex flex-col md:flex-row md:items-center gap-y-0.5 md:gap-y-0 md:gap-x-6 justify-between"
+            >
+              <a
+                class="*:size-full size-6 py-2 md:py-0 flex items-center font-medium text-sm text-white focus:outline-none focus:text-white hover:text-theme1 transition-all duration-300 ease-in-out"
+                href="#"
+                aria-current="page"
+              >
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>
+              </a>
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white focus:outline-none focus:text-white hover:text-theme1 transition-all duration-300 ease-in-out"
+                href="#"
+                aria-current="page"
+              >
+                Boarding School
+              </a>
+
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                href="#"
+              >
+                Day School
+              </a>
+
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                href="#"
+              >
+                Pre School
+              </a>
+
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                href="#"
+              >
+                International
+              </a>
+
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                href="#"
+              >
+                Register School
+              </a>
+
+              <a
+                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                href="#"
+              >
+                Blog
+              </a>
+
+              <div
+                class=""
+              >
+                <button
+                  type="button"
+                  class="w-full py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                >
+                  More
+                  <svg
+                    class="shrink-0 size-4 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
