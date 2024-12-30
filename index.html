@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>EduList</title>
   </head>
   <body>
@@ -20,29 +24,66 @@
             href="#"
             aria-label=""
           >
-            <img src="https://www.edustoke.com/assets/images/logo.svg" alt="">
+            <img src="./assets/img/logo.png" alt="" />
           </a>
         </div>
-        
+
         <div class="flex lg:hidden">
-          <label for="sideToggle"
-              class="-m-2.5 p-2.5 group-[]/nav:text-black relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
-              <span class="sr-only">Open menu</span>
-              <svg class="size-8" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z" fill="currentColor"></path><path d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z" fill="currentColor"></path><path d="M11 11C10.4477 11 10 11.4477 10 12C10 12.5523 10.4477 13 11 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H11Z" fill="currentColor"></path></svg>
+          <label
+            for="sideToggle"
+            class="-m-2.5 p-2.5 group-[]/nav:text-black relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            <span class="sr-only">Open menu</span>
+            <svg
+              class="size-8"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="200px"
+              width="200px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M4 18C4 17.4477 4.44772 17 5 17H19C19.5523 17 20 17.4477 20 18C20 18.5523 19.5523 19 19 19H5C4.44772 19 4 18.5523 4 18Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M11 11C10.4477 11 10 11.4477 10 12C10 12.5523 10.4477 13 11 13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H11Z"
+                fill="currentColor"
+              ></path>
+            </svg>
           </label>
-      </div>
+        </div>
 
         <div class="hidden lg:flex flex-row items-center justify-end gap-1">
-          <div
-            class="inline-flex gap-10"
-          >
+          <div class="inline-flex gap-10">
             <button
               type="button"
               class="inline-flex justify-center items-center gap-x-1 text-sm font-semibold rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
             >
-            <span class="shrink-0 size-8 *:size-full p-1.5 rounded-full bg-slate-700 text-white">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
-            </span>
+              <span
+                class="shrink-0 size-8 *:size-full p-1.5 rounded-full bg-theme3 text-white"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="100%"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  ></path>
+                </svg>
+              </span>
               +91 9876543210
             </button>
             <button
@@ -50,8 +91,8 @@
               class="inline-flex justify-center items-center gap-x-1 text-sm font-semibold rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
             >
               <img
-                class="shrink-0 size-[38px] rounded-full shadow-lg border-2 border-theme1"
-                src="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-174669.jpg?t=st=1735218429~exp=1735222029~hmac=990a97e10975225d6c123e27dca64b31287df39528299a66a1434c328613f6d8&w=740"
+                class="shrink-0 size-[38px] rounded-full shadow-lg border-2 border-theme3 object-cover"
+                src="./assets/img/smiling-young-man-illustration_1308-174669.jpg"
                 alt="Avatar"
               />
               Login
@@ -61,11 +102,12 @@
       </nav>
     </header>
     <!--  END HEADER  -->
-    <div class="lg:py-5 bg-slate-800">
+    <div class="lg:py-5 bg-white">
       <nav
         class="relative mx-auto max-w-7xl px-6 lg:px-8 w-full md:flex md:items-center md:gap-3"
       >
-        <div class="hidden transition-all duration-300 basis-full grow lg:block"
+        <div
+          class="hidden transition-all duration-300 basis-full grow lg:block"
         >
           <div
             class="[&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
@@ -74,21 +116,33 @@
               class="py-2 md:py-0 flex flex-col md:flex-row md:items-center gap-y-0.5 md:gap-y-0 md:gap-x-6 justify-between"
             >
               <a
-                class="*:size-full size-6 py-2 md:py-0 flex items-center font-medium text-sm text-white focus:outline-none focus:text-white hover:text-theme1 transition-all duration-300 ease-in-out"
+                class="*:size-full size-6 py-2 md:py-0 flex items-center font-medium text-sm focus:outline-none text-theme3 focus hover:text-theme3 transition-all duration-300 ease-in-out"
                 href="#"
                 aria-current="page"
               >
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"
+                  ></path>
+                </svg>
               </a>
               <div class="relative group">
                 <a
-                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm text-white focus:outline-none focus:text-white group-hover:text-theme1 transition-all duration-300 ease-in-out"
+                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm focus:outline-none focus group-hover:text-theme3 transition-all duration-300 ease-in-out"
                   href="#"
                   aria-current="page"
                 >
                   Boarding School
                   <svg
-                    class="shrink-0 size-4 text-white group-hover:rotate-180 group-hover:text-theme1 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
+                    class="shrink-0 size-4 group-hover:rotate-180 group-hover:text-theme3 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -102,40 +156,63 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </a>
-                <div class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out">
+                <div
+                  class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out"
+                >
                   <ul>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Best In India
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         CBSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         ICSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         International
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Boys
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Girls
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         City Events
                       </a>
                     </li>
@@ -144,13 +221,13 @@
               </div>
               <div class="relative group">
                 <a
-                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm text-white focus:outline-none focus:text-white group-hover:text-theme1 transition-all duration-300 ease-in-out"
+                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm focus:outline-none focus group-hover:text-theme3 transition-all duration-300 ease-in-out"
                   href="#"
                   aria-current="page"
                 >
                   Day School
                   <svg
-                    class="shrink-0 size-4 text-white group-hover:rotate-180 group-hover:text-theme1 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
+                    class="shrink-0 size-4 group-hover:rotate-180 group-hover:text-theme3 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -164,40 +241,63 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </a>
-                <div class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out">
+                <div
+                  class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out"
+                >
                   <ul>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Best In India
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         CBSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         ICSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         International
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Boys
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Girls
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         City Events
                       </a>
                     </li>
@@ -206,20 +306,20 @@
               </div>
 
               <a
-                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                class="py-2 md:py-0 flex items-center font-medium text-sm hover:text-theme3 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
                 href="#"
               >
                 Pre School
               </a>
               <div class="relative group">
                 <a
-                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm text-white focus:outline-none focus:text-white group-hover:text-theme1 transition-all duration-300 ease-in-out"
+                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm focus:outline-none focus group-hover:text-theme3 transition-all duration-300 ease-in-out"
                   href="#"
                   aria-current="page"
                 >
                   International
                   <svg
-                    class="shrink-0 size-4 text-white group-hover:rotate-180 group-hover:text-theme1 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
+                    class="shrink-0 size-4 group-hover:rotate-180 group-hover:text-theme3 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -233,40 +333,63 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </a>
-                <div class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out">
+                <div
+                  class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out"
+                >
                   <ul>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Best In India
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         CBSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         ICSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         International
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Boys
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Girls
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         City Events
                       </a>
                     </li>
@@ -275,26 +398,27 @@
               </div>
 
               <a
-                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                class="py-2 md:py-0 flex items-center font-medium text-sm hover:text-theme3 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
                 href="#"
               >
                 Register School
               </a>
 
               <a
-                class="py-2 md:py-0 flex items-center font-medium text-sm text-white hover:text-theme1 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
+                class="py-2 md:py-0 flex items-center font-medium text-sm hover:text-theme3 transition-all duration-300 ease-in-out focus:outline-none focus:text-theme1"
                 href="#"
               >
                 Blog
-              </a><div class="relative group">
+              </a>
+              <div class="relative group">
                 <a
-                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm text-white focus:outline-none focus:text-white group-hover:text-theme1 transition-all duration-300 ease-in-out"
+                  class="inline-flex py-2 md:py-0 items-center font-medium text-sm focus:outline-none focus group-hover:text-theme3 transition-all duration-300 ease-in-out"
                   href="#"
                   aria-current="page"
                 >
                   More
                   <svg
-                    class="shrink-0 size-4 text-white group-hover:rotate-180 group-hover:text-theme1 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
+                    class="shrink-0 size-4 group-hover:rotate-180 group-hover:text-theme3 ms-auto md:ms-1 transition-all duration-300 ease-in-out"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -308,40 +432,63 @@
                     <path d="m6 9 6 6 6-6" />
                   </svg>
                 </a>
-                <div class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out">
+                <div
+                  class="hidden group-hover:block absolute top-11 w-40 left-1/2 -translate-x-1/2 text-sm text-theme2 bg-white rounded-lg shadow-lg py-3 before:absolute before:left-0 before:-top-6 before:-z-10 before:size-full before:bg-transparent transition-all duration-300 ease-in-out"
+                >
                   <ul>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Best In India
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         CBSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         ICSE
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         International
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Boys
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         Girls
                       </a>
                     </li>
                     <li>
-                      <a class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out" href="">
+                      <a
+                        class="py-1 font-medium text-gray-400 hover:text-gray-600 hover:bg-gray-100 inline-block w-full px-4 transition-all duration-300 ease-in-out"
+                        href=""
+                      >
                         City Events
                       </a>
                     </li>
@@ -355,346 +502,2449 @@
     </div>
 
     <!-- hero section start -->
-     <div class="w-full grid grid-cols-2">
+    <div class="w-full grid grid-cols-2">
       <div class="aspect-[3/2]">
-        <img src="./assets/img/hero-lg.webp" class="size-full object-cover" alt="">
+        <img
+          src="./assets/img/hero01.jpg"
+          class="size-full object-cover"
+          alt=""
+        />
       </div>
       <div class="bg-[#004436] flex flex-col justify-center items-center">
-        <div class="text-2xl font-semibold text-white uppercase text-center tracking-wider">
+        <div
+          class="text-2xl text-white font-semibold uppercase text-center tracking-wider"
+        >
           Find the School
         </div>
-        <div class="text-4xl font-semibold text-white uppercase text-center tracking-wide">
+        <div
+          class="text-4xl text-white font-semibold uppercase text-center tracking-wide"
+        >
           That Fits You Best
         </div>
         <div class="mt-3">
-          <svg class="h-3.5 w-36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 17" fill="none"><path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" stroke="white" d="M184.68 8.95006C169.95 1.68006 152.06 1.68006 137.32 8.95006C124.03 15.5101 107.9 15.5101 94.61 8.95006C79.88 1.68006 61.99 1.68006 47.25 8.95006C33.96 15.5101 17.83 15.5101 4.54 8.95006L1 7.43006"></path></svg>
+          <svg
+            class="h-3.5 w-36"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 186 17"
+            fill="none"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="4"
+              stroke="white"
+              d="M184.68 8.95006C169.95 1.68006 152.06 1.68006 137.32 8.95006C124.03 15.5101 107.9 15.5101 94.61 8.95006C79.88 1.68006 61.99 1.68006 47.25 8.95006C33.96 15.5101 17.83 15.5101 4.54 8.95006L1 7.43006"
+            ></path>
+          </svg>
         </div>
-        <div class="text-sm font-medium mt-8 text-white uppercase text-center tracking-wide w-2/3">
-          Finding the right school shouldn’t be hard. From K‑12 to college to grad school, we make it easy to discover and connect with the best ones for you.
+        <div
+          class="text-sm text-white font-medium mt-8 uppercase text-center tracking-wide w-2/3"
+        >
+          Finding the right school shouldn’t be hard. From K‑12 to college to
+          grad school, we make it easy to discover and connect with the best
+          ones for you.
         </div>
-        <div class="text-lg font-medium mt-8 text-white uppercase text-center tracking-wide w-2/3">
+        <div
+          class="text-lg text-white font-medium mt-8 uppercase text-center tracking-wide w-2/3"
+        >
           Start Your Search
         </div>
         <div class="flex items-center gap-3 mt-4">
-          <button class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm">
+          <button
+            class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm"
+          >
             Pre Schools
           </button>
-          <button class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm">
+          <button
+            class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm"
+          >
             Day School
           </button>
-          <button class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm">
+          <button
+            class="bg-[#237c3a] text-white text-base py-2 px-6 rounded-sm"
+          >
             K-12 Schools
           </button>
         </div>
       </div>
-     </div>
+    </div>
     <!-- hero section Ends -->
 
+    <!-- svg start -->
     <div class="-mt-4">
-      <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45"><path fill="white" d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z" transform="translate(0 -5)"></path></svg>
+      <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+        <path
+          fill="#f4ece7"
+          d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+          transform="translate(0 -5)"
+        ></path>
+      </svg>
     </div>
+    <!-- svg Ends -->
 
+    <!-- About section start -->
+    <div class="bg-theme4">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full grid grid-cols-2 py-16">
+        <div class="">
+          <div class="me-5 flex">
+            <a
+              class="rounded-md text-3xl inline-flex font-semibold focus:outline-none focus:opacity-80 w-28"
+              href="#"
+              aria-label=""
+            >
+              <img src="./assets/img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="w-2/3">
+            <div class="text-3xl text-theme3 font-semibold mt-10">
+              Get accepted without an application.
+            </div>
+            <div class="mt-6">
+              <div class="text-base text-black">
+                No application. No waiting.
+              </div>
+              <div class="text-base text-black">
+                With Direct Admissions, colleges can accept you based on the
+                information in your Niche Profile.
+              </div>
+            </div>
+            <div class="mt-7 flex items-center gap-3">
+              <button
+                class="bg-theme3 text-white text-base py-2 px-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-theme3/80"
+              >
+                Create a Profile
+              </button>
+              <button
+                class="bg-white text-black text-base border-2 border-theme3 py-2 px-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-theme3 hover:text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <img class="" src="./assets/img/about.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- About section Ends -->
 
+    <!-- day-school section start -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full py-16">
+      <div
+        class="text-2xl font-semibold text-theme3 border-b-[3px] pb-1 border-theme3 w-fit"
+      >
+        Day School
+      </div>
+      <div class="overflow-hidden -mx-4 px-4">
+        <div
+          class="swiper mySwiper !overflow-visible [&_.swiper-button-next]:-right-3 [&_.swiper-button-next:after]:size-8 [&_.swiper-button-next:after]:text-lg [&_.swiper-button-next:after]:bg-theme3 [&_.swiper-button-next:after]:flex [&_.swiper-button-next:after]:items-center [&_.swiper-button-next:after]:justify-center [&_.swiper-button-next:after]:rounded-full [&_.swiper-button-next:after]:text-white [&_.swiper-button-next:after]:font-bold [&_.swiper-button-next:after]:flex-shrink-0 [&_.swiper-button-prev]:-left-3 [&_.swiper-button-prev:after]:size-8 [&_.swiper-button-prev:after]:text-lg [&_.swiper-button-prev:after]:bg-theme3 [&_.swiper-button-prev:after]:flex [&_.swiper-button-prev:after]:items-center [&_.swiper-button-prev:after]:justify-center [&_.swiper-button-prev:after]:rounded-full [&_.swiper-button-prev:after]:text-white [&_.swiper-button-prev:after]:font-bold [&_.swiper-button-prev:after]:flex-shrink-0"
+        >
+          <div class="swiper-wrapper py-8 !overflow-visible">
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <!-- day-school section Ends -->
 
+    <!-- svg start -->
+    <div class="-mt-4">
+      <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+        <path
+          fill="#f4ece7"
+          d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+          transform="translate(0 -5)"
+        ></path>
+      </svg>
+    </div>
+    <!-- svg Ends -->
 
+    <!-- play-school section start -->
+    <div class="bg-theme4">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full py-16">
+        <div
+          class="text-2xl font-semibold text-theme3 border-b-[3px] pb-1 border-theme3 w-fit"
+        >
+          Play School
+        </div>
+        <div class="overflow-hidden -mx-4 px-4">
+          <div
+            class="swiper mySwiper !overflow-visible [&_.swiper-button-next]:-right-3 [&_.swiper-button-next:after]:size-8 [&_.swiper-button-next:after]:text-lg [&_.swiper-button-next:after]:bg-theme3 [&_.swiper-button-next:after]:flex [&_.swiper-button-next:after]:items-center [&_.swiper-button-next:after]:justify-center [&_.swiper-button-next:after]:rounded-full [&_.swiper-button-next:after]:text-white [&_.swiper-button-next:after]:font-bold [&_.swiper-button-next:after]:flex-shrink-0 [&_.swiper-button-prev]:-left-3 [&_.swiper-button-prev:after]:size-8 [&_.swiper-button-prev:after]:text-lg [&_.swiper-button-prev:after]:bg-theme3 [&_.swiper-button-prev:after]:flex [&_.swiper-button-prev:after]:items-center [&_.swiper-button-prev:after]:justify-center [&_.swiper-button-prev:after]:rounded-full [&_.swiper-button-prev:after]:text-white [&_.swiper-button-prev:after]:font-bold [&_.swiper-button-prev:after]:flex-shrink-0"
+          >
+            <div class="swiper-wrapper py-8 !overflow-visible">
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                  href=""
+                >
+                  <div class="overflow-hidden">
+                    <img
+                      class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                      src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                      alt="Sandford High School"
+                    />
+                  </div>
+                  <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-theme3">
+                      Sandford High School
+                    </h3>
+                    <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                      Quiet retreat in the mountains with scenic views.
+                    </p>
+                    <p class="mt-1 text-black font-semibold">
+                      Govindpura, Jaipur
+                    </p>
+                    <p class="mt-3 text-theme3 font-semibold">
+                      ₹ 50,000
+                      <span class="text-sm text-black">/Per annum</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- play-school section Ends -->
 
-    <input type="checkbox" class="peer/sideToggle hidden " name="sideToggle" id="sideToggle">
-    <label for="sideToggle" class="fixed inset-0 -z-[1011] pointer-events-none backdrop-blur-xl bg-black/40 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
-    <div class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-theme1/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
-      <div class="flex items-center justify-between">
-          <a href="" class="-ml-1.5">
-              <span class="sr-only">Logo</span>
-              <img class="h-10 w-auto" src="https://www.edustoke.com/new-ui/templates/school-details/img/edustoke-logo.svg" alt=" Logo">
-          </a>
-          <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+    <!-- boarding-school section start -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full py-16">
+      <div
+        class="text-2xl font-semibold text-theme3 border-b-[3px] pb-1 border-theme3 w-fit"
+      >
+        Boarding School
+      </div>
+      <div class="overflow-hidden -mx-4 px-4">
+        <div
+          class="swiper mySwiper !overflow-visible [&_.swiper-button-next]:-right-3 [&_.swiper-button-next:after]:size-8 [&_.swiper-button-next:after]:text-lg [&_.swiper-button-next:after]:bg-theme3 [&_.swiper-button-next:after]:flex [&_.swiper-button-next:after]:items-center [&_.swiper-button-next:after]:justify-center [&_.swiper-button-next:after]:rounded-full [&_.swiper-button-next:after]:text-white [&_.swiper-button-next:after]:font-bold [&_.swiper-button-next:after]:flex-shrink-0 [&_.swiper-button-prev]:-left-3 [&_.swiper-button-prev:after]:size-8 [&_.swiper-button-prev:after]:text-lg [&_.swiper-button-prev:after]:bg-theme3 [&_.swiper-button-prev:after]:flex [&_.swiper-button-prev:after]:items-center [&_.swiper-button-prev:after]:justify-center [&_.swiper-button-prev:after]:rounded-full [&_.swiper-button-prev:after]:text-white [&_.swiper-button-prev:after]:font-bold [&_.swiper-button-prev:after]:flex-shrink-0"
+        >
+          <div class="swiper-wrapper py-8 !overflow-visible">
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a
+                class="group flex flex-col h-full border bg-white border-gray-200 hover:border-transparent hover:shadow-lg focus:outline-none focus:border-transparent focus:shadow-lg transition duration-300 rounded-xl px-3 py-2.5"
+                href=""
+              >
+                <div class="overflow-hidden">
+                  <img
+                    class="size-full object-cover rounded-lg aspect-square group-hover:scale-105 transition-all duration-300 ease-in-out overflow-hidden"
+                    src="https://img.freepik.com/free-photo/kids-classroom-taking-english-class_23-2149402668.jpg?t=st=1735543575~exp=1735547175~hmac=2bd98e9ccd896db0ff3f5617416f1ab33f726af71078a891a7a01e7bf455643e&w=1060"
+                    alt="Sandford High School"
+                  />
+                </div>
+                <div class="mt-6">
+                  <h3 class="text-xl font-semibold text-theme3">
+                    Sandford High School
+                  </h3>
+                  <p class="mt-3 text-gray-600 text-ellipes line-clamp-2">
+                    Quiet retreat in the mountains with scenic views.
+                  </p>
+                  <p class="mt-1 text-black font-semibold">
+                    Govindpura, Jaipur
+                  </p>
+                  <p class="mt-3 text-theme3 font-semibold">
+                    ₹ 50,000 <span class="text-sm text-black">/Per annum</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <!-- boarding-school section Ends -->
+
+    <!-- about category card start -->
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full py-16">
+      <div class="bg-theme4 p-5 rounded-lg">
+        <div
+          class="swiper categorySwiper [&_.swiper-button-next:after]:size-8 [&_.swiper-button-next:after]:text-lg [&_.swiper-button-next:after]:bg-theme3 [&_.swiper-button-next:after]:flex [&_.swiper-button-next:after]:items-center [&_.swiper-button-next:after]:justify-center [&_.swiper-button-next:after]:rounded-full [&_.swiper-button-next:after]:text-white [&_.swiper-button-next:after]:font-bold [&_.swiper-button-next:after]:flex-shrink-0 [&_.swiper-button-prev:after]:size-8 [&_.swiper-button-prev:after]:text-lg [&_.swiper-button-prev:after]:bg-theme3 [&_.swiper-button-prev:after]:flex [&_.swiper-button-prev:after]:items-center [&_.swiper-button-prev:after]:justify-center [&_.swiper-button-prev:after]:rounded-full [&_.swiper-button-prev:after]:text-white [&_.swiper-button-prev:after]:font-bold [&_.swiper-button-prev:after]:flex-shrink-0"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
+              >
+                <div>
+                  <h1
+                    class="block text-xl font-semibold text-theme3 sm:text-2xl"
+                  >
+                    About Boarding School
+                  </h1>
+                  <ul class="space-y-2 sm:space-y-4 mt-8">
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Significance of Boarding Schools:
+                          </span>
+                          Boarding schools have a historical significance
+                          tracing back to the concept of "Gurukul," imparting
+                          life skills like time management, work ethic, and
+                          independence to help students lead disciplined and
+                          balanced lives.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Benefits for Students:</span
+                          >
+                          Boarding schools provide students with opportunities
+                          to explore and develop their interests, fostering a
+                          confident personality and an improved mindset.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold">Role of Edustoke:</span>
+                          Edustoke offers a platform for parents to access
+                          detailed information about over 10,000 boarding
+                          schools, allowing them to filter and find the ideal
+                          option for their children.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Key Considerations for Parents:</span
+                          >
+                          While choosing a boarding school, parents should
+                          consider factors such as the school's alumni
+                          achievements, laurels, and foundational aims,
+                          alongside visiting the school personally.
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="relative ms-4">
+                  <img
+                    class="w-full rounded-md aspect-[3/3] object-cover object-center"
+                    src="https://img.freepik.com/free-photo/smiley-kids-main-plan_329181-14186.jpg?t=st=1735549036~exp=1735552636~hmac=db1d47d89113347b6fbc03b626bcab6cd09396d6e734db6bf30a8699fb96796d&w=1060"
+                    alt="Hero Image"
+                  />
+                  <div
+                    class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"
+                  ></div>
+
+                  <div class="absolute bottom-0 start-0">
+                    <svg
+                      class="w-2/3 ms-auto h-auto text-white"
+                      width="630"
+                      height="451"
+                      viewBox="0 0 630 451"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="531"
+                        y="352"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="140"
+                        y="352"
+                        width="106"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="402"
+                        width="64"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="433"
+                        y="402"
+                        width="63"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="384"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="328"
+                        width="50"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="303"
+                        width="49"
+                        height="58"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="392"
+                        width="49"
+                        height="59"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="44"
+                        y="402"
+                        width="66"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="234"
+                        y="402"
+                        width="62"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="334"
+                        y="303"
+                        width="50"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="64"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="123"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="507"
+                        y="124"
+                        width="49"
+                        height="24"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="49"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
+              >
+                <div class="relative ms-4">
+                  <img
+                    class="w-full rounded-md aspect-[3/3] object-cover object-center"
+                    src="https://img.freepik.com/free-photo/smiley-kids-main-plan_329181-14186.jpg?t=st=1735549036~exp=1735552636~hmac=db1d47d89113347b6fbc03b626bcab6cd09396d6e734db6bf30a8699fb96796d&w=1060"
+                    alt="Hero Image"
+                  />
+                  <div
+                    class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"
+                  ></div>
+
+                  <div class="absolute bottom-0 start-0">
+                    <svg
+                      class="w-2/3 ms-auto h-auto text-white"
+                      width="630"
+                      height="451"
+                      viewBox="0 0 630 451"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="531"
+                        y="352"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="140"
+                        y="352"
+                        width="106"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="402"
+                        width="64"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="433"
+                        y="402"
+                        width="63"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="384"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="328"
+                        width="50"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="303"
+                        width="49"
+                        height="58"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="392"
+                        width="49"
+                        height="59"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="44"
+                        y="402"
+                        width="66"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="234"
+                        y="402"
+                        width="62"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="334"
+                        y="303"
+                        width="50"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="64"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="123"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="507"
+                        y="124"
+                        width="49"
+                        height="24"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="49"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h1
+                    class="block text-xl font-semibold text-theme3 sm:text-2xl"
+                  >
+                    About Play School
+                  </h1>
+                  <ul class="space-y-2 sm:space-y-4 mt-8">
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Significance of Boarding Schools:
+                          </span>
+                          Boarding schools have a historical significance
+                          tracing back to the concept of "Gurukul," imparting
+                          life skills like time management, work ethic, and
+                          independence to help students lead disciplined and
+                          balanced lives.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Benefits for Students:</span
+                          >
+                          Boarding schools provide students with opportunities
+                          to explore and develop their interests, fostering a
+                          confident personality and an improved mindset.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold">Role of Edustoke:</span>
+                          Edustoke offers a platform for parents to access
+                          detailed information about over 10,000 boarding
+                          schools, allowing them to filter and find the ideal
+                          option for their children.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Key Considerations for Parents:</span
+                          >
+                          While choosing a boarding school, parents should
+                          consider factors such as the school's alumni
+                          achievements, laurels, and foundational aims,
+                          alongside visiting the school personally.
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
+              >
+                <div>
+                  <h1
+                    class="block text-xl font-semibold text-theme3 sm:text-2xl"
+                  >
+                    About PU Colleges
+                  </h1>
+                  <ul class="space-y-2 sm:space-y-4 mt-8">
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Significance of Boarding Schools:
+                          </span>
+                          Boarding schools have a historical significance
+                          tracing back to the concept of "Gurukul," imparting
+                          life skills like time management, work ethic, and
+                          independence to help students lead disciplined and
+                          balanced lives.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Benefits for Students:</span
+                          >
+                          Boarding schools provide students with opportunities
+                          to explore and develop their interests, fostering a
+                          confident personality and an improved mindset.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold">Role of Edustoke:</span>
+                          Edustoke offers a platform for parents to access
+                          detailed information about over 10,000 boarding
+                          schools, allowing them to filter and find the ideal
+                          option for their children.
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="flex gap-x-3">
+                      <span
+                        class="mt-0.5 min-w-7 size-7 flex justify-center items-center rounded-full text-theme3"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 256 256"
+                          height="200px"
+                          width="200px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M240,128a15.79,15.79,0,0,1-10.5,15l-63.44,23.07L143,229.5a16,16,0,0,1-30,0L89.94,166.06,26.5,143a16,16,0,0,1,0-30L89.94,89.94,113,26.5a16,16,0,0,1,30,0l23.07,63.44L229.5,113A15.79,15.79,0,0,1,240,128Z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base">
+                          <span class="font-semibold"
+                            >Key Considerations for Parents:</span
+                          >
+                          While choosing a boarding school, parents should
+                          consider factors such as the school's alumni
+                          achievements, laurels, and foundational aims,
+                          alongside visiting the school personally.
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="relative ms-4">
+                  <img
+                    class="w-full rounded-md aspect-[3/3] object-cover object-center"
+                    src="https://img.freepik.com/free-photo/smiley-kids-main-plan_329181-14186.jpg?t=st=1735549036~exp=1735552636~hmac=db1d47d89113347b6fbc03b626bcab6cd09396d6e734db6bf30a8699fb96796d&w=1060"
+                    alt="Hero Image"
+                  />
+                  <div
+                    class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6"
+                  ></div>
+
+                  <div class="absolute bottom-0 start-0">
+                    <svg
+                      class="w-2/3 ms-auto h-auto text-white"
+                      width="630"
+                      height="451"
+                      viewBox="0 0 630 451"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="531"
+                        y="352"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="140"
+                        y="352"
+                        width="106"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="402"
+                        width="64"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="433"
+                        y="402"
+                        width="63"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="384"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="328"
+                        width="50"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="303"
+                        width="49"
+                        height="58"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="352"
+                        width="49"
+                        height="50"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="99"
+                        y="392"
+                        width="49"
+                        height="59"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="44"
+                        y="402"
+                        width="66"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="234"
+                        y="402"
+                        width="62"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="334"
+                        y="303"
+                        width="50"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="581"
+                        width="49"
+                        height="64"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="482"
+                        y="123"
+                        width="49"
+                        height="49"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="507"
+                        y="124"
+                        width="49"
+                        height="24"
+                        fill="currentColor"
+                      ></rect>
+                      <rect
+                        x="531"
+                        y="49"
+                        width="99"
+                        height="99"
+                        fill="currentColor"
+                      ></rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <!-- about category card Ends -->
+
+    <!-- svg start -->
+    <div class="-mt-4">
+      <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 45">
+        <path
+          fill="#d0e0ec"
+          d="M2000,17.26a2.6,2.6,0,0,1-.4.49C1970.2,16.56,1970.41,5,1941,5s-29.42,12.75-58.84,12.75S1852.73,5,1823.31,5s-29.42,12.75-58.83,12.75S1735.06,5,1705.64,5s-29.41,12.75-58.83,12.75S1617.39,5,1588,5s-29.41,12.75-58.83,12.75S1499.72,5,1470.3,5s-29.41,12.75-58.83,12.75S1382.05,5,1352.64,5s-29.42,12.75-58.83,12.75S1264.39,5,1235,5s-29.42,12.75-58.83,12.75S1146.73,5,1117.32,5s-29.42,12.75-58.83,12.75S1029.07,5,999.66,5s-29.42,12.75-58.84,12.75S911.41,5,882,5s-29.41,12.75-58.83,12.75S793.74,5,764.33,5,734.91,17.75,705.5,17.75,676.08,5,646.67,5s-29.42,12.75-58.84,12.75S558.42,5,529,5s-29.41,12.75-58.83,12.75S440.76,5,411.34,5s-29.41,12.75-58.83,12.75S323.1,5,293.68,5s-29.42,12.75-58.83,12.75S205.43,5,176,5,146.6,17.75,117.19,17.75,87.77,5,58.36,5C29.11,5,28.93,17.61,0,17.74V50H2000Z"
+          transform="translate(0 -5)"
+        ></path>
+      </svg>
+    </div>
+    <!-- svg Ends -->
+
+    <!-- cta start -->
+    <div class="bg-[#d0e0ec]">
+      <div class="mx-auto max-w-5xl px-6 lg:px-8 w-full py-16 grid grid-cols-7">
+        <div class="w-80 col-span-3">
+          <img class="size-full" src="./assets/img/cta.webp" alt="" />
+        </div>
+        <div class="flex flex-col justify-center items-center col-span-4">
+          <div class="text-2xl font-semibold text-theme3 text-center">
+            Not sure where to start?
+          </div>
+          <div class="mt-3">
+            <svg
+              class="h-3.5 w-36"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 186 17"
+              fill="none"
+            >
+              <path
+                fill="none"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="4"
+                stroke="#004436"
+                d="M184.68 8.95006C169.95 1.68006 152.06 1.68006 137.32 8.95006C124.03 15.5101 107.9 15.5101 94.61 8.95006C79.88 1.68006 61.99 1.68006 47.25 8.95006C33.96 15.5101 17.83 15.5101 4.54 8.95006L1 7.43006"
+              ></path>
+            </svg>
+          </div>
+          <div class="text-base font-medium text-theme3 mt-8 text-center">
+            Tell us what matters most to you and we'll create a custom list of
+            schools tailored to fit your needs.
+          </div>
+          <div class="mt-7 flex items-center gap-3">
+            <button
+              class="bg-theme3 text-white text-base py-2 px-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-theme3/80"
+            >
+              Create a Profile
+            </button>
+            <button
+              class="bg-white text-black text-base border-2 border-theme3 py-2 px-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-theme3 hover:text-white"
+            >
+              Find Schools Near You
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cta Ends -->
+
+    <!-- footer section start -->
+    <footer class="mt-auto bg-theme3 w-full">
+      <div
+        class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto"
+      >
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div class="col-span-full lg:col-span-1">
+            <a
+              class="inline-flex text-xl font-semibold text-white focus:outline-none focus:opacity-80 h-16"
+              href="#"
+              aria-label="Brand"
+              >
+              <img class="size-full" src="./assets/img/logoDark.png" alt="">
+              </a
+            >
+          </div>
+
+          <div class="col-span-1">
+            <h4 class="font-semibold text-gray-100">Product</h4>
+
+            <div class="mt-3 grid space-y-3">
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Pricing</a
+                >
+              </p>
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Changelog</a
+                >
+              </p>
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Docs</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-1">
+            <h4 class="font-semibold text-gray-100">Company</h4>
+
+            <div class="mt-3 grid space-y-3">
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >About us</a
+                >
+              </p>
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Blog</a
+                >
+              </p>
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Careers</a
+                >
+                <span
+                  class="inline-block ms-1 text-xs bg-theme4 text-theme3 py-1 px-2 rounded-lg"
+                  >We're hiring</span
+                >
+              </p>
+              <p>
+                <a
+                  class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="#"
+                  >Customers</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-span-2">
+            <h4 class="font-semibold text-gray-100">Stay up to date</h4>
+
+            <form>
+              <div
+                class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2"
+              >
+                <div class="w-full">
+                  <label for="hero-input" class="sr-only">Subscribe</label>
+                  <input
+                    type="text"
+                    id="hero-input"
+                    name="hero-input"
+                    class="py-3 px-4 block w-full border-transparent rounded-lg text-sm disabled:opacity-50 disabled:pointer-events-none"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <a
+                  class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-theme3 text-white focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                  href="#"
+                >
+                  Subscribe
+                </a>
+              </div>
+              <p class="mt-3 text-sm text-gray-400">
+                New UI kits or big discounts. Never spam.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center"
+        >
+          <div class="flex justify-between items-center">
+            <p class="text-sm text-gray-400">
+              © 2024 EduList.
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
               </svg>
-          </label>
+            </a>
+            <a
+              class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                />
+              </svg>
+            </a>
+            <a
+              class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+            </a>
+            <a
+              class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+            <a
+              class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+              href="#"
+            >
+              <svg
+                class="shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section ends -->
+
+    <input
+      type="checkbox"
+      class="peer/sideToggle hidden"
+      name="sideToggle"
+      id="sideToggle"
+    />
+    <label
+      for="sideToggle"
+      class="fixed inset-0 -z-[1011] pointer-events-none backdrop-blur-xl bg-black/40 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"
+    ></label>
+    <div
+      class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-theme1/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300"
+    >
+      <div class="flex items-center justify-between">
+        <a href="" class="-ml-1.5">
+          <span class="sr-only">Logo</span>
+          <img
+            class="h-10 w-auto"
+            src="https://www.edustoke.com/new-ui/templates/school-details/img/edustoke-logo.svg"
+            alt=" Logo"
+          />
+        </a>
+        <label
+          for="sideToggle"
+          type="button"
+          class="-m-2.5 rounded-md p-2.5 text-gray-200"
+        >
+          <span class="sr-only">Close menu</span>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </label>
       </div>
       <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
-          <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                  <div class="flex flex-col gap-5 items-center">
-                      <div class="flex flex-col w-full gap-y-5">
-                          <a href="javascript:;" class="text-sm font-semibold text-gray-50">Home</a>
-                          <div class="relative flex flex-col gap-y-3">
-                              <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
-                              <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50">
-                                  Boarding School
-                                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
-                                  </svg>
-                              </label>
-                              <div class="w-full peer-checked/mm:block hidden">
-                                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
-                                      <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      CBSE
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      ICSE
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      International
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      Boys
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      Girls
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      City Events
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                      </div>
-                                  </div>
-                              </div>
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <div class="flex flex-col gap-5 items-center">
+              <div class="flex flex-col w-full gap-y-5">
+                <a
+                  href="javascript:;"
+                  class="text-sm font-semibold text-gray-50"
+                  >Home</a
+                >
+                <div class="relative flex flex-col gap-y-3">
+                  <input
+                    class="peer/mm hidden"
+                    type="checkbox"
+                    name="mmMenu"
+                    id="mmCompany"
+                  />
+                  <label
+                    for="mmCompany"
+                    class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50"
+                  >
+                    Boarding School
+                    <svg
+                      class="h-5 w-5 ml-auto flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div class="w-full peer-checked/mm:block hidden">
+                    <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                      <div
+                        class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative"
+                      >
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              CBSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
                           </div>
-                          <div class="relative flex flex-col gap-y-3">
-                              <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
-                              <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50">
-                                  Day School
-                                  <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
-                                  </svg>
-                              </label>
-                              <div class="w-full peer-checked/mm:block hidden">
-                                  <div class="grid grid-cols-1 flex-wrap w-full gap-4">
-                                      <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      CBSE
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      ICSE
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      International
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      Boys
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      Girls
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                          <div>
-                                              <div class="flex-auto">
-                                                  <a href="javascript:;" class="block font-semibold opacity-80">
-                                                      City Events
-                                                      <span class="absolute inset-0 z-[1]"></span>
-                                                  </a>
-                                              </div>
-                                          </div>
-  
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <a href="javascript:;" class="text-sm font-semibold text-gray-50">Pre Schools</a>
-                          <div class="relative flex flex-col gap-y-3">
-                            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
-                            <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50">
-                                International
-                                <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
-                                </svg>
-                            </label>
-                            <div class="w-full peer-checked/mm:block hidden">
-                                <div class="grid grid-cols-1 flex-wrap w-full gap-4">
-                                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
-
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    CBSE
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    ICSE
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    International
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    Boys
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    Girls
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    City Events
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                          <a href="javascript:;" class="text-sm font-semibold text-gray-50">Register School</a>
-                          <a href="javascript:;" class="text-sm font-semibold text-gray-50">Blog</a>
-                          <div class="relative flex flex-col gap-y-3">
-                            <input class="peer/mm hidden" type="checkbox" name="mmMenu" id="mmCompany">
-                            <label for="mmCompany" class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50">
-                                More
-                                <svg class="h-5 w-5 ml-auto flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
-                                </svg>
-                            </label>
-                            <div class="w-full peer-checked/mm:block hidden">
-                                <div class="grid grid-cols-1 flex-wrap w-full gap-4">
-                                    <div class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative">
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              ICSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
 
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    CBSE
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    ICSE
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              International
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
 
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    International
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    Boys
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    Girls
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex-auto">
-                                                <a href="javascript:;" class="block font-semibold opacity-80">
-                                                    City Events
-                                                    <span class="absolute inset-0 z-[1]"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Boys
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Girls
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              City Events
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
                         </div>
                       </div>
+                    </div>
                   </div>
+                </div>
+                <div class="relative flex flex-col gap-y-3">
+                  <input
+                    class="peer/mm hidden"
+                    type="checkbox"
+                    name="mmMenu"
+                    id="mmCompany"
+                  />
+                  <label
+                    for="mmCompany"
+                    class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50"
+                  >
+                    Day School
+                    <svg
+                      class="h-5 w-5 ml-auto flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div class="w-full peer-checked/mm:block hidden">
+                    <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                      <div
+                        class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative"
+                      >
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              CBSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              ICSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              International
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Boys
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Girls
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              City Events
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="javascript:;"
+                  class="text-sm font-semibold text-gray-50"
+                  >Pre Schools</a
+                >
+                <div class="relative flex flex-col gap-y-3">
+                  <input
+                    class="peer/mm hidden"
+                    type="checkbox"
+                    name="mmMenu"
+                    id="mmCompany"
+                  />
+                  <label
+                    for="mmCompany"
+                    class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50"
+                  >
+                    International
+                    <svg
+                      class="h-5 w-5 ml-auto flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div class="w-full peer-checked/mm:block hidden">
+                    <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                      <div
+                        class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative"
+                      >
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              CBSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              ICSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              International
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Boys
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Girls
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              City Events
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="javascript:;"
+                  class="text-sm font-semibold text-gray-50"
+                  >Register School</a
+                >
+                <a
+                  href="javascript:;"
+                  class="text-sm font-semibold text-gray-50"
+                  >Blog</a
+                >
+                <div class="relative flex flex-col gap-y-3">
+                  <input
+                    class="peer/mm hidden"
+                    type="checkbox"
+                    name="mmMenu"
+                    id="mmCompany"
+                  />
+                  <label
+                    for="mmCompany"
+                    class="flex items-center gap-x-[2px] text-sm font-semibold text-gray-50"
+                  >
+                    More
+                    <svg
+                      class="h-5 w-5 ml-auto flex-none text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div class="w-full peer-checked/mm:block hidden">
+                    <div class="grid grid-cols-1 flex-wrap w-full gap-4">
+                      <div
+                        class="w-full text-xs xl:text-sm *:flex *:items-center *:gap-x-3 *:py-1 *:relative"
+                      >
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              CBSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              ICSE
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              International
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Boys
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              Girls
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="flex-auto">
+                            <a
+                              href="javascript:;"
+                              class="block font-semibold opacity-80"
+                            >
+                              City Events
+                              <span class="absolute inset-0 z-[1]"></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+  <!-- category Swiper -->
+  <script>
+    var swiper = new Swiper(".categorySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 </html>
