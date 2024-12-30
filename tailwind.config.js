@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       colors: {
         'theme1': '#ff0000',
-        'theme2': '#000'
-      }
+        'theme2': '#1a3d6b'
+      },
+      fontFamily: {
+        poppins: ["poppins"],
+      },
     },
   },
   plugins: [],
